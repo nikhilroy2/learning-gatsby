@@ -1,7 +1,6 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
-
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import * as styles from "../components/index.module.css"
@@ -84,6 +83,12 @@ const IndexPage = () => (
       <h1>
         Welcome to <b>Gatsby!</b> Nikhil <span style={{color: 'red'}}>Chandra</span> Roy
       </h1>
+
+      <ul>
+        <li>
+          <Link to="/about"> About Page </Link>
+        </li>
+      </ul>
       <p className={styles.intro}>
         <b>Example pages:</b>{" "}
         {samplePageLinks.map((link, i) => (
